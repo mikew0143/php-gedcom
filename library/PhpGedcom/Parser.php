@@ -163,12 +163,12 @@ class Parser
                     $data .= "\n";
                     
                     if (isset($record[2])) {
-                        $data .= trim($record[2]);
+                        $data .= rtrim($record[2]);
                     }
                     break;
                 case 'CONC':
                     if (isset($record[2])) {
-                        $data .= ' ' . trim($record[2]);
+                        $data .= rtrim($record[2]);
                     }
                     break;
                 default:
